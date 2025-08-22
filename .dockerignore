@@ -1,4 +1,40 @@
-.git
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+
+# Venv and tools
+.venv/
+.env
+.env.*
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Notebooks and large artifacts
+notebooks/
+*.ipynb_checkpoints/
+
+# Power BI and local assets
+*.pbix
+app/dashboard/
+
+# Data caches outside copied folder
+data/raw/
+
+# Misc
+*.log
+**/tmp/.git
 __pycache__/
 *.ipynb_checkpoints
 .venv

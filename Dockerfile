@@ -28,12 +28,15 @@ PY
 # COPY customer_intelligence_dataset.csv /data/customer_intelligence_dataset.csv
 # ENV DATA_LOCAL_PATH=/data/customer_intelligence_dataset.csv
 
+# Copy application code and minimal assets required for runtime
 COPY app.py ./app.py
+COPY models ./models
+COPY data ./data
 
-# Expose & default port
-ENV PORT=8501
+# Expose & default port (Cloud Run will set PORT automatically)
+ENV PORT=8080
 
-EXPOSE 8501
+EXPOSE 8080
 
 # ✅ Use ONE worker to keep startup simpler & avoid concurrency issues
-CMD ["gunicorn", "-b", "0.0.0.0:8501", "-w", "1", "app:app"]
+CMD ["sh", "-c", "gunicorn -w 1 -b 0.0.0.0:${PORT} app:app"]

@@ -1,0 +1,9 @@
+metric,value,percentage
+sentiment_positive_count,3945,49.3%
+sentiment_negative_count,3221,40.3%
+sentiment_neutral_count,834,10.4%
+high_value_threshold,$90000.00,80th percentile
+revenue_at_risk,"$118,460,000.00",25.6%
+avg_compound_score,0.209,
+avg_words_per_feedback,3.3,
+total_feedbacks,8000,100%
