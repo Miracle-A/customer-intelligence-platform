@@ -1,0 +1,32 @@
+{
+  "threshold_default": 0.5,
+  "metrics_default": {
+    "accuracy": 0.95125,
+    "precision": 0.9346049046321526,
+    "recall": 0.8639798488664987,
+    "f1": 0.8979057591623036,
+    "f2": 0.8772378516624041,
+    "roc_auc": 0.9756098837708416,
+    "pr_auc": 0.9595074917748774
+  },
+  "threshold_f2_opt": 0.45,
+  "metrics_f2_opt": {
+    "accuracy": 0.943125,
+    "precision": 0.8625592417061612,
+    "recall": 0.9168765743073047,
+    "f1": 0.8888888888888888,
+    "f2": 0.9054726368159204,
+    "roc_auc": 0.9756098837708416,
+    "pr_auc": 0.9595074917748774
+  },
+  "features": [
+    "age",
+    "gender",
+    "segment",
+    "tenure_months",
+    "num_purchases",
+    "avg_spent"
+  ],
+  "rows": 8000,
+  "churn_rate": 0.248125
+}
